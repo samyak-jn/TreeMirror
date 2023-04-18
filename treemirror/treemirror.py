@@ -4,7 +4,7 @@ import shutil
 from tqdm import tqdm
 
 def main():
-    parser = argparse.ArgumentParser(description='Process directory structure.')
+    parser = argparse.ArgumentParser(description="Mirror the directory structure of a source directory to a destination directory.")
     parser.add_argument('path', type=str, help='path to project directory')
     parser.add_argument('output_path', type=str, help='path to output directory')
     args = parser.parse_args()
